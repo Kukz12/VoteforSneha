@@ -136,7 +136,7 @@ CANDIDATE = {
 10. **Use Tinted Buses for All**: Ensure privacy and comfort by providing tinted buses for student transportation.
 11. **Reduce Fines for Late Returns**: Implement a less stringent policy for fines related to late returns to alleviate financial burdens. 
  """,
-    "image2": "C:/Users/sneha/OneDrive/Desktop/sneha12.jpg",
+    "image2": "sneha12.jpg",
     "contact": {
         "Email": "f20220134@dubai.bits-pilani.ac.in",
         "Social Media": {
