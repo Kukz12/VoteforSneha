@@ -166,7 +166,7 @@ def main():
     col1, col2 = st.columns([1, 2])
     with col1:
         try:
-             st.image(CANDIDATE["image2"], width=300)
+             st.image(CANDIDATE["image2"], width=450)
         except FileNotFoundError:
             st.warning("Sneha's image not found. Please ensure the image is placed in the 'images/' directory.")
     with col2:
