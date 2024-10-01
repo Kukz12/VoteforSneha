@@ -4,6 +4,13 @@ from PIL import Image
 # ----------------------- #
 #      Page Configuration #
 # ----------------------- #
+st.set_page_config(
+    page_title="Sneha Cenoy for General Secretary",
+    page_icon="🎓",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 st.markdown(
     """
     <style>
@@ -14,14 +21,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# Set page configuration as the first Streamlit command
-st.set_page_config(
-    page_title="Sneha Cenoy for General Secretary",
-    page_icon="🎓",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
 # ----------------------- #
 #          CSS            #
 # ----------------------- #
