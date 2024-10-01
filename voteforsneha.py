@@ -181,7 +181,7 @@ def main():
         except FileNotFoundError:
             st.warning("Sneha's image not found. Please ensure the image is placed in the 'images/' directory.")
     with col2:
-        st.markdown(f"### {CANDIDATE['name']}")
+        st.markdown(f"<h3 style='color: #1e90ff;'>{CANDIDATE['name']}</h3>", unsafe_allow_html=True)
         st.markdown(f"**Position:** {CANDIDATE['position']}")
         st.write("""
             Hey everyone! 👋 I'm Sneha, a third-year CS student, and I'm super excited to be running for 
@@ -190,12 +190,12 @@ def main():
             voice is heard loud and clear. Got any concerns or ideas? I'm always here to listen and make things
              happen! Let’s make this year epic together! 🚀💬
         """)
-        st.header("📍 Where to Vote")
+        st.header(f"<h3 style='color: #1e90ff;'>📍 Where to Vote</h3>", unsafe_allow_html=True)
         st.markdown("""
               <div class='vote-info'>
-              🗳️ **Date and Time**: Thursday, 3rd October<br>
-              🗳️ **Time**: 7:00AM to 2:00 pm<br>
-              🗳️ **Venue**: EG LAB<br>
+              🗳️ <strong>Date and Time:</strong> Thursday, 3rd October<br>
+              🗳️ <strong>Time:</strong> 7:00AM to 2:00 pm<br>
+              🗳️ <strong>Venue:</strong> EG LAB<br>
               </div>
                """, unsafe_allow_html=True)
         st.header("What makes me unique?")
@@ -212,7 +212,7 @@ def main():
             You come up with the problems, we'll discuss plausible solutions together, and then approach the right people to
             make it happen. This way, we make real changes that actually work for everyone.
         """)
-    st.header("Agenda and Vision")
+    st.header(f"<h3 style='color: #1e90ff;'>📍 Agenda and Vision</h3>", unsafe_allow_html=True)
     st.markdown(CANDIDATE["agenda"])
 
     # Testimonials Section
