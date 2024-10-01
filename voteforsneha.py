@@ -4,9 +4,7 @@ from PIL import Image
 # ----------------------- #
 #      Page Configuration #
 # ----------------------- #
-
-st.markdown(bg_color_css, unsafe_allow_html=True)
-    st.markdown(
+st.markdown(
     """
     <style>
     .main {
