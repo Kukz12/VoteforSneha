@@ -136,7 +136,7 @@ CANDIDATE = {
 2. **Renovate Mess and Washrooms**: Improve hygiene and comfort in shared facilities.
 3. **Split Mess Fee and Accommodation Costs**: Allow students to pay for mess and accommodation separately for more financial flexibility.
 4. **Assign Cleaning Staff for hostel Rooms**: Ensure rooms are regularly cleaned by dedicated personnel.
-5. **Install Water Dispensers Throughout Campus**: Make clean drinking water easily accessible for everyone.
+5. **Re-install Water Dispensers Throughout Campus**: Make clean drinking water easily accessible for everyone.
 6. **Upgrade Lab Equipment for Biotechnology**: Enhance resources for biotech students to support better research and learning.
 7. **Establish Male and Female Lounges in Main Block**: Create comfortable social spaces for students in the main campus building.
 8. **Open Recreational Room All Day**: Make recreational facilities accessible at all times to promote student well-being.
@@ -225,7 +225,7 @@ def main():
     st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Get in Touch</h3>", unsafe_allow_html=True)
     st.markdown(f"**Email**: {CANDIDATE['contact']['Email']}")
 
-    st.subheader("Follow Sneha on Social Media")
+    st.subheader("Follow me on Social Media")
     social_links = ""
     for platform, link in CANDIDATE['contact']['Social Media'].items():
         if platform.lower() == "linkedin":
