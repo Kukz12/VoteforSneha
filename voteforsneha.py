@@ -141,7 +141,6 @@ CANDIDATE = {
         "Email": "f20220134@dubai.bits-pilani.ac.in",
         "Social Media": {
             "LinkedIn": "https://www.linkedin.com/in/sneha-cenoy-0007b5281",
-            "Instagram": "https://www.instagram.com/sneha_cenoy/"
         }
     }
 }
@@ -179,6 +178,15 @@ def main():
             voice is heard loud and clear. Got any concerns or ideas? I'm always here to listen and make things
              happen! Let’s make this year epic together! 🚀💬
         """)
+         st.header("📍 Where to Vote")
+         st.markdown("""
+              <div class='vote-info'>
+              🗳️ **Main Block Auditorium**: 9 AM - 5 PM<br>
+              🗳️ **Library Conference Room**: 10 AM - 4 PM<br>
+              🗳️ **Hostel Common Room**: 11 AM - 3 PM<br>
+              🗳️ **Student Activity Center**: 1 PM - 6 PM
+              </div>
+               """, unsafe_allow_html=True)
         st.header("What makes me unique?")
         st.write("""
             Often, when we raise concerns, the solutions offered are 
@@ -226,27 +234,16 @@ def main():
     for platform, link in CANDIDATE['contact']['Social Media'].items():
         if platform.lower() == "linkedin":
             icon = "https://cdn-icons-png.flaticon.com/512/174/174857.png"
-        elif platform.lower() == "instagram":
-            icon = "https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
         else:
             icon = ""
         social_links += f'<a href="{link}" target="_blank"><img src="{icon}" alt="{platform}" title="{platform}"></a>'
     st.markdown(f'<div class="social-icons">{social_links}</div>', unsafe_allow_html=True)
 
-    st.subheader("Send a Message")
-    with st.form("contact_form", clear_on_submit=True):
-        name = st.text_input("Your Name")
-        email = st.text_input("Your Email")
-        message = st.text_area("Message")
-        submitted = st.form_submit_button("Send")
-        if submitted:
-            # Placeholder for form submission logic
-            st.success("Thank you for your message! Sneha will get back to you soon.")
 
     # Optional: Download Manifesto
-    st.header("Download Sneha's Full Manifesto")
+    st.header("Download Sneha's Campaign poster")
     manifesto_url = "https://drive.google.com/file/d/1kjTeuX1Bm8EKc8b8tMcGV7rxotWoHyJP/view?usp=sharing"
-    st.markdown(f'[Click here to view my manifesto]({manifesto_url})', unsafe_allow_html=True)
+    st.markdown(f'[Click here to view my poster]({manifesto_url})', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
