@@ -190,7 +190,7 @@ def main():
             voice is heard loud and clear. Got any concerns or ideas? I'm always here to listen and make things
              happen! Let’s make this year epic together! 🚀💬
         """)
-        st.header(f"<h3 style='color: #1e90ff;'>📍 Where to Vote</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='color: #1e90ff;'>📍 Where to Vote</h3>", unsafe_allow_html=True)
         st.markdown("""
               <div class='vote-info'>
               🗳️ <strong>Date and Time:</strong> Thursday, 3rd October<br>
@@ -212,7 +212,8 @@ def main():
             You come up with the problems, we'll discuss plausible solutions together, and then approach the right people to
             make it happen. This way, we make real changes that actually work for everyone.
         """)
-    st.header(f"<h3 style='color: #1e90ff;'>📍 Agenda and Vision</h3>", unsafe_allow_html=True)
+        
+    st.markdown("<h3 style='color: #1e90ff;'>Agenda and Vision</h3>", unsafe_allow_html=True)
     st.markdown(CANDIDATE["agenda"])
 
     # Testimonials Section
