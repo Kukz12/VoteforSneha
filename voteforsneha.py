@@ -216,26 +216,7 @@ def main():
     st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Agenda and Vision</h3>", unsafe_allow_html=True)
     st.markdown(CANDIDATE["agenda"])
 
-    # Testimonials Section
-    st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Testimonial</h3>", unsafe_allow_html=True)
-    testimonial1 = """
-    <div class="testimonial">
-    "Sneha has been an incredible leader in our study groups, always ensuring everyone's voice is heard."
-    <br>
-    <strong>- Ananya Gupta, Class of 2024</strong>
-    </div>
-    """
-    testimonial2 = """
-    <div class="testimonial">
-    "Her dedication to improving campus facilities is truly inspiring."
-    <br>
-    <strong>- Rohan Mehta, Faculty Advisor</strong>
-    </div>
-    """
-    st.markdown(testimonial1, unsafe_allow_html=True)
-    st.markdown(testimonial2, unsafe_allow_html=True)
-
-    st.markdown("---")
+  
     # Optional: Download Manifesto
     st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Download Sneha's Campaign poster</h3>", unsafe_allow_html=True)
     manifesto_url = "https://drive.google.com/file/d/1kjTeuX1Bm8EKc8b8tMcGV7rxotWoHyJP/view?usp=sharing"
