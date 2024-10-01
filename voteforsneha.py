@@ -159,6 +159,7 @@ CANDIDATE = {
 # ----------------------- #
 
 def main():
+    inject_css()
     # Set background color
     set_bg_color()
 
