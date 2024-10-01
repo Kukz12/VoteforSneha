@@ -178,8 +178,8 @@ def main():
             voice is heard loud and clear. Got any concerns or ideas? I'm always here to listen and make things
              happen! Let’s make this year epic together! 🚀💬
         """)
-         st.header("📍 Where to Vote")
-         st.markdown("""
+        st.header("📍 Where to Vote")
+        st.markdown("""
               <div class='vote-info'>
               🗳️ **Main Block Auditorium**: 9 AM - 5 PM<br>
               🗳️ **Library Conference Room**: 10 AM - 4 PM<br>
