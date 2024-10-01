@@ -241,7 +241,7 @@ def main():
     manifesto_url = "https://drive.google.com/file/d/1kjTeuX1Bm8EKc8b8tMcGV7rxotWoHyJP/view?usp=sharing"
     st.markdown(f'[Click here to view my poster]({manifesto_url})', unsafe_allow_html=True)
     # Contact Section
-    st.header("Get in Touch")
+    st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Get in Touch</h3>", unsafe_allow_html=True)
     st.markdown(f"**Email**: {CANDIDATE['contact']['Email']}")
 
     st.subheader("Follow Sneha on Social Media")
