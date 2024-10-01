@@ -181,7 +181,7 @@ def main():
         except FileNotFoundError:
             st.warning("Sneha's image not found. Please ensure the image is placed in the 'images/' directory.")
     with col2:
-        st.markdown(f"<h3 style='color: #1e90ff;'>{CANDIDATE['name']}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3 style='color: #1e90ff;font-size: 2.5em;'>{CANDIDATE['name']}</h3>", unsafe_allow_html=True)
         st.markdown(f"**Position:** {CANDIDATE['position']}")
         st.write("""
             Hey everyone! 👋 I'm Sneha, a third-year CS student, and I'm super excited to be running for 
@@ -190,7 +190,7 @@ def main():
             voice is heard loud and clear. Got any concerns or ideas? I'm always here to listen and make things
              happen! Let’s make this year epic together! 🚀💬
         """)
-        st.markdown("<h3 style='color: #1e90ff;'>📍 Where to Vote</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>📍 Where to Vote</h3>", unsafe_allow_html=True)
         st.markdown("""
               <div class='vote-info'>
               🗳️ <strong>Date and Time:</strong> Thursday, 3rd October<br>
@@ -198,7 +198,7 @@ def main():
               🗳️ <strong>Venue:</strong> EG LAB<br>
               </div>
                """, unsafe_allow_html=True)
-        st.header("What makes me unique?")
+        st.markdown("<h3 style='color: #1e90ff;'> What makes me unique?</h3>", unsafe_allow_html=True)
         st.write("""
             Often, when we raise concerns, the solutions offered are 
             impractical and end up causing inconvenience or extra costs for students.
@@ -213,11 +213,11 @@ def main():
             make it happen. This way, we make real changes that actually work for everyone.
         """)
         
-    st.markdown("<h3 style='color: #1e90ff;'>Agenda and Vision</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Agenda and Vision</h3>", unsafe_allow_html=True)
     st.markdown(CANDIDATE["agenda"])
 
     # Testimonials Section
-    st.header("Testimonials")
+    st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Testimonial</h3>", unsafe_allow_html=True)
     testimonial1 = """
     <div class="testimonial">
     "Sneha has been an incredible leader in our study groups, always ensuring everyone's voice is heard."
@@ -237,7 +237,7 @@ def main():
 
     st.markdown("---")
     # Optional: Download Manifesto
-    st.header("Download Sneha's Campaign poster")
+    st.markdown("<h3 style='color: #1e90ff;font-size: 2.5em;'>Download Sneha's Campaign poste</h3>", unsafe_allow_html=True)
     manifesto_url = "https://drive.google.com/file/d/1kjTeuX1Bm8EKc8b8tMcGV7rxotWoHyJP/view?usp=sharing"
     st.markdown(f'[Click here to view my poster]({manifesto_url})', unsafe_allow_html=True)
     # Contact Section
