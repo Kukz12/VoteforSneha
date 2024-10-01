@@ -8,7 +8,7 @@ def set_bg_color():
     bg_color_css = """
     <style>
     body {
-        background-color: #001f3f; /* Navy blue color */
+        background-color: #043c75; /* Navy blue color */
     }
     </style>
     """
@@ -133,17 +133,17 @@ CANDIDATE = {
     "name": "Sneha Cenoy",
     "position": "General Secretary",
     "agenda": """
-1. **Renovate Mess and Washrooms**: Improve hygiene and comfort in shared facilities.
-2. **Provide Cheaper and Better Food**: Ensure affordable, high-quality meal options for students.
+1. **Provide Cheaper and Better Food**: Ensure affordable, high-quality meal options for students.
+2. **Renovate Mess and Washrooms**: Improve hygiene and comfort in shared facilities.
 3. **Split Mess Fee and Accommodation Costs**: Allow students to pay for mess and accommodation separately for more financial flexibility.
-4. **Assign Cleaning Staff for Rooms**: Ensure rooms are regularly cleaned by dedicated personnel.
+4. **Assign Cleaning Staff for hostel Rooms**: Ensure rooms are regularly cleaned by dedicated personnel.
 5. **Install Water Dispensers Throughout Campus**: Make clean drinking water easily accessible for everyone.
 6. **Upgrade Lab Equipment for Biotechnology**: Enhance resources for biotech students to support better research and learning.
 7. **Establish Male and Female Lounges in Main Block**: Create comfortable social spaces for students in the main campus building.
 8. **Open Recreational Room All Day**: Make recreational facilities accessible at all times to promote student well-being.
 9. **Organize a College Trip**: Plan an enjoyable group outing to foster camaraderie among students.
 10. **Use Tinted Buses for All**: Ensure privacy and comfort by providing tinted buses for student transportation.
-11. **Reduce Fines for Late Returns**: Implement a less stringent policy for fines related to late returns to alleviate financial burdens. 
+11. **Reduce Fines for Late Return books in library**: Implement a less stringent policy for fines related to late returns to alleviate financial burdens. 
  """,
     "image2": "sneha12.jpg",
     "contact": {
@@ -174,7 +174,7 @@ def main():
         st.markdown("---")
 
     # About Sneha and Agenda on the Home Page
-    st.header("About Sneha Cenoy")
+    st.header("About Me")
     col1, col2 = st.columns([1, 2])
     with col1:
         try:
@@ -194,7 +194,7 @@ def main():
         st.header("📍 Where to Vote")
         st.markdown("""
               <div class='vote-info'>
-              🗳️ **Date and Time**: Thursday, 3rd October 2024<br>
+              🗳️ **Date and Time**: Thursday, 3rd October<br>
               🗳️ **Time**: 7:00AM to 2:00 pm<br>
               🗳️ **Venue**: EG LAB<br>
               </div>
