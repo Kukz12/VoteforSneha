@@ -4,16 +4,18 @@ from PIL import Image
 # ----------------------- #
 #      Page Configuration #
 # ----------------------- #
-def set_bg_color():
-    bg_color_css = """
+
+st.markdown(bg_color_css, unsafe_allow_html=True)
+    st.markdown(
+    """
     <style>
-    body {
+    .main {
         background-color: #043c75; /* Navy blue color */
     }
     </style>
-    """
-    st.markdown(bg_color_css, unsafe_allow_html=True)
-    
+    """,
+    unsafe_allow_html=True
+)
 # Set page configuration as the first Streamlit command
 st.set_page_config(
     page_title="Sneha Cenoy for General Secretary",
@@ -160,8 +162,7 @@ CANDIDATE = {
 
 def main():
     inject_css()
-    # Set background color
-    set_bg_color()
+
 
     # Your app content here
     # Title of the app
