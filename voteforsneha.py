@@ -4,7 +4,16 @@ from PIL import Image
 # ----------------------- #
 #      Page Configuration #
 # ----------------------- #
-
+def set_bg_color():
+    bg_color_css = """
+    <style>
+    body {
+        background-color: #001f3f; /* Navy blue color */
+    }
+    </style>
+    """
+    st.markdown(bg_color_css, unsafe_allow_html=True)
+    
 # Set page configuration as the first Streamlit command
 st.set_page_config(
     page_title="Sneha Cenoy for General Secretary",
@@ -150,6 +159,10 @@ CANDIDATE = {
 # ----------------------- #
 
 def main():
+    # Set background color
+    set_bg_color()
+
+    # Your app content here
     # Title of the app
     st.title("🎓 Sneha Cenoy for General Secretary 🎓")
 
@@ -165,7 +178,7 @@ def main():
     col1, col2 = st.columns([1, 2])
     with col1:
         try:
-             st.image(CANDIDATE["image2"], width=450)
+             st.image(CANDIDATE["image2"], width=300)
         except FileNotFoundError:
             st.warning("Sneha's image not found. Please ensure the image is placed in the 'images/' directory.")
     with col2:
@@ -181,10 +194,9 @@ def main():
         st.header("📍 Where to Vote")
         st.markdown("""
               <div class='vote-info'>
-              🗳️ **Main Block Auditorium**: 9 AM - 5 PM<br>
-              🗳️ **Library Conference Room**: 10 AM - 4 PM<br>
-              🗳️ **Hostel Common Room**: 11 AM - 3 PM<br>
-              🗳️ **Student Activity Center**: 1 PM - 6 PM
+              🗳️ **Date and Time**: Thursday, 3rd October 2024<br>
+              🗳️ **Time**: 7:00AM to 2:00 pm<br>
+              🗳️ **Venue**: EG LAB<br>
               </div>
                """, unsafe_allow_html=True)
         st.header("What makes me unique?")
@@ -224,7 +236,10 @@ def main():
     st.markdown(testimonial2, unsafe_allow_html=True)
 
     st.markdown("---")
-
+    # Optional: Download Manifesto
+    st.header("Download Sneha's Campaign poster")
+    manifesto_url = "https://drive.google.com/file/d/1kjTeuX1Bm8EKc8b8tMcGV7rxotWoHyJP/view?usp=sharing"
+    st.markdown(f'[Click here to view my poster]({manifesto_url})', unsafe_allow_html=True)
     # Contact Section
     st.header("Get in Touch")
     st.markdown(f"**Email**: {CANDIDATE['contact']['Email']}")
@@ -238,12 +253,6 @@ def main():
             icon = ""
         social_links += f'<a href="{link}" target="_blank"><img src="{icon}" alt="{platform}" title="{platform}"></a>'
     st.markdown(f'<div class="social-icons">{social_links}</div>', unsafe_allow_html=True)
-
-
-    # Optional: Download Manifesto
-    st.header("Download Sneha's Campaign poster")
-    manifesto_url = "https://drive.google.com/file/d/1kjTeuX1Bm8EKc8b8tMcGV7rxotWoHyJP/view?usp=sharing"
-    st.markdown(f'[Click here to view my poster]({manifesto_url})', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
